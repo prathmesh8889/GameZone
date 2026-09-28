@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070816" />
+  <title>Neon Nexus | PlayStation Gaming Arena</title>
+  <meta name="description" content="A futuristic PlayStation gaming lounge website demo with neon 3D effects, stations, tournaments and instant booking." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="aurora aurora-a"></div>
+  <div class="aurora aurora-b"></div>
+  <div class="noise"></div>
+
+  <header class="nav-shell">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Neon Nexus home">
+        <span class="brand-mark">N</span>
+        <span><strong>NEON</strong> NEXUS</span>
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#stations">Stations</a>
+        <a href="#games">Games</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#events">Events</a>
+        <a class="nav-cta" href="#booking">Book Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="live-dot"></span> NEXT-GEN GAMING LOUNGE</div>
+        <h1>ENTER THE <span class="gradient-text">NEXT LEVEL</span> OF PLAY.</h1>
+        <p>Ultra-smooth console gaming, cinematic screens, premium controllers and an atmosphere built for competitive nights, squads and pure fun.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary magnetic" href="#booking">Book a Station <span>↗</span></a>
+          <a class="btn btn-ghost" href="#stations">Explore Arena</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>12</strong><span>Premium Stations</span></div>
+          <div><strong>4K</strong><span>Ultra HD Displays</span></div>
+          <div><strong>120</strong><span>FPS Ready</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-tilt>
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1659078376395-e17f6f850c24?auto=format&fit=crop&w=1400&q=85" alt="Modern gaming console station" />
+          <div class="hero-overlay"></div>
+          <div class="floating-badge badge-one">120 FPS</div>
+          <div class="floating-badge badge-two">4K HDR</div>
+          <div class="controller-orbit" aria-hidden="true">
+            <svg viewBox="0 0 220 130" role="img" aria-label="Decorative game controller">
+              <path d="M56 33c-24 2-35 18-41 46-6 28 7 39 22 23l18-19h110l18 19c15 16 28 5 22-23-6-28-17-44-41-46-15-1-25 6-34 14H90c-9-8-19-15-34-14Z"/>
+              <circle cx="157" cy="62" r="7"/><circle cx="178" cy="77" r="7"/><circle cx="157" cy="91" r="7"/><circle cx="137" cy="77" r="7"/>
+              <path d="M57 60v34M40 77h34"/>
+            </svg>
+          </div>
+        </div>
+        <div class="hero-ring ring-one"></div>
+        <div class="hero-ring ring-two"></div>
+      </div>
+    </section>
+
+    <section class="marquee-section" aria-label="Gaming features">
+      <div class="marquee-track">
+        <span>PLAYSTATION GAMING</span><i>✦</i><span>PRIVATE BOOTHS</span><i>✦</i><span>TOURNAMENT NIGHTS</span><i>✦</i><span>4K EXPERIENCE</span><i>✦</i><span>DUAL CONTROLLERS</span><i>✦</i>
+        <span>PLAYSTATION GAMING</span><i>✦</i><span>PRIVATE BOOTHS</span><i>✦</i><span>TOURNAMENT NIGHTS</span><i>✦</i><span>4K EXPERIENCE</span><i>✦</i><span>DUAL CONTROLLERS</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="section container" id="stations">
+      <div class="section-heading reveal">
+        <div><span class="kicker">OUR SETUPS</span><h2>Choose your battle station.</h2></div>
+        <p>From quick solo sessions to private squad booths, every setup is tuned for comfort, low latency and maximum immersion.</p>
+      </div>
+      <div class="station-grid">
+        <article class="station-card reveal" data-tilt>
+          <img src="https://images.unsplash.com/photo-1690467498987-e9a0f73a9495?auto=format&fit=crop&w=1200&q=85" alt="Gaming controller setup" />
+          <div class="card-shade"></div>
+          <div class="station-content"><span>01</span><h3>Solo Pro</h3><p>Perfect for ranked sessions and story mode.</p><b>1 Player · 4K Display</b></div>
+        </article>
+        <article class="station-card reveal" data-tilt>
+          <img src="https://images.unsplash.com/photo-1659616125967-b0ccb97e259f?auto=format&fit=crop&w=1200&q=85" alt="Friends playing console games" />
+          <div class="card-shade"></div>
+          <div class="station-content"><span>02</span><h3>Duo Zone</h3><p>Built for co-op, rivalry and couch gaming.</p><b>2 Players · Dual Pads</b></div>
+        </article>
+        <article class="station-card reveal" data-tilt>
+          <img src="https://images.unsplash.com/photo-1597638566411-4e4dc7854728?auto=format&fit=crop&w=1200&q=85" alt="RGB gaming station" />
+          <div class="card-shade"></div>
+          <div class="station-content"><span>03</span><h3>Squad Arena</h3><p>Neon booth for groups, parties and tournaments.</p><b>4 Players · Big Screen</b></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section games-section" id="games">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="kicker">GAME LIBRARY</span><h2>Pick your mood. Start the match.</h2></div>
+          <p>Fast sessions, team battles, racers and cinematic adventures. Ask the desk for the current game list.</p>
+        </div>
+        <div class="game-grid">
+          <article class="game-card g1 reveal"><div class="game-icon">⚽</div><span>SPORTS</span><h3>Football Arena</h3><p>Local multiplayer, leagues and penalty battles.</p></article>
+          <article class="game-card g2 reveal"><div class="game-icon">🏎️</div><span>RACING</span><h3>Hyper Drive</h3><p>High-speed racing with split-screen challenges.</p></article>
+          <article class="game-card g3 reveal"><div class="game-icon">🎯</div><span>ACTION</span><h3>Battle Zone</h3><p>Competitive squad action and team strategy.</p></article>
+          <article class="game-card g4 reveal"><div class="game-icon">🗺️</div><span>ADVENTURE</span><h3>Story Worlds</h3><p>Explore cinematic worlds on a massive display.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="pricing">
+      <div class="section-heading reveal">
+        <div><span class="kicker">PLAY PASSES</span><h2>Simple gaming plans.</h2></div>
+        <p>Demo pricing is included below. You can replace it with your real rates in seconds.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <span class="plan">QUICK PLAY</span><h3>₹149<small>/ hour</small></h3><p>For quick solo sessions.</p>
+          <ul><li>1 Player station</li><li>4K gaming display</li><li>Premium controller</li><li>Standard game library</li></ul>
+          <a href="#booking" class="btn btn-ghost">Select Pass</a>
+        </article>
+        <article class="price-card featured reveal">
+          <div class="popular">MOST POPULAR</div><span class="plan">DUO BOOST</span><h3>₹249<small>/ hour</small></h3><p>Bring a friend and compete.</p>
+          <ul><li>2 Players</li><li>Dual controllers</li><li>Priority station</li><li>Full multiplayer library</li></ul>
+          <a href="#booking" class="btn btn-primary">Select Pass</a>
+        </article>
+        <article class="price-card reveal">
+          <span class="plan">SQUAD NIGHT</span><h3>₹699<small>/ 2 hrs</small></h3><p>Built for groups and celebrations.</p>
+          <ul><li>Up to 4 players</li><li>Big-screen booth</li><li>Party lighting</li><li>Reserved arena slot</li></ul>
+          <a href="#booking" class="btn btn-ghost">Select Pass</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section event-wrap" id="events">
+      <div class="container event-card reveal">
+        <div class="event-copy">
+          <span class="kicker">WEEKEND EVENT</span>
+          <h2>Friday Night Knockout</h2>
+          <p>Bring your squad, enter the bracket and battle for arena glory. Add your own tournament details, prizes and registration rules here.</p>
+          <div class="event-meta"><span>🎮 16 Slots</span><span>🏆 Prize Pool</span><span>⚡ Live Bracket</span></div>
+          <a class="btn btn-primary" href="#booking">Reserve a Slot</a>
+        </div>
+        <div class="event-visual" data-tilt>
+          <div class="holo-panel"><span>TOURNAMENT</span><strong>FRI<br>08:00</strong><small>READY PLAYER?</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="booking">
+      <div class="booking-grid reveal">
+        <div class="booking-copy">
+          <span class="kicker">BOOK YOUR SESSION</span>
+          <h2>Your next match starts here.</h2>
+          <p>Choose your setup and preferred time. This demo form works in the browser and shows an instant booking confirmation.</p>
+          <div class="mini-feature"><span>01</span><div><b>Pick a station</b><small>Solo, duo or squad.</small></div></div>
+          <div class="mini-feature"><span>02</span><div><b>Select date & time</b><small>Choose your preferred slot.</small></div></div>
+          <div class="mini-feature"><span>03</span><div><b>Get confirmation</b><small>Connect this later to WhatsApp or your backend.</small></div></div>
+        </div>
+        <form class="booking-form" id="bookingForm">
+          <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+          <div class="form-row">
+            <label>Phone<input type="tel" name="phone" placeholder="+91 98xxxxxx" required></label>
+            <label>Players<select name="players" required><option value="">Select</option><option>1 Player</option><option>2 Players</option><option>3 Players</option><option>4 Players</option></select></label>
+          </div>
+          <div class="form-row">
+            <label>Date<input type="date" name="date" required></label>
+            <label>Time<input type="time" name="time" required></label>
+          </div>
+          <label>Station<select name="station" required><option value="">Choose station</option><option>Solo Pro</option><option>Duo Zone</option><option>Squad Arena</option></select></label>
+          <button class="btn btn-primary" type="submit">Confirm Booking <span>↗</span></button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><a class="brand" href="#home"><span class="brand-mark">N</span><span><strong>NEON</strong> NEXUS</span></a><p>Futuristic console gaming lounge website demo.</p></div>
+      <div><b>Explore</b><a href="#stations">Stations</a><a href="#games">Games</a><a href="#pricing">Pricing</a></div>
+      <div><b>Visit</b><span>Your Gaming Arena Address</span><span>Open daily · 10 AM – 11 PM</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Neon Nexus Gaming Arena.</span><span>Demo photos: Unsplash</span></div>
+  </footer>
+
+  <button class="sound-toggle" id="soundToggle" aria-label="Toggle ambient interface sound" title="Toggle sound">♪</button>
+  <script src="script.js"></script>
+</body>
+</html>
